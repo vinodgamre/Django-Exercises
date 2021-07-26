@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="detail">
+  <h2> {{ Prashvi.title }}</h2>
+<p>{{ Prashvi.text }}</p>
+</div>
+
+<h4><a href="{% url 'article_edit' Prashvi.pk %}">Edit This Post</a></h4>
+<h4><a href="{% url 'article_delete' Prashvi.pk %}">Delete This Post</a></h4>
+
+{% endblock content %}
